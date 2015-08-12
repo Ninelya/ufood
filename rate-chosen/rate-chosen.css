@@ -1,0 +1,446 @@
+.brown{
+color: #bf4604;
+}
+.bolder{
+line-height:1.7;
+font-weight:bold;
+}
+.circles {
+background: url(img/rate-empty_circles.png) no-repeat;
+width: 105px;
+height: 17px;
+}
+	.circles div {
+	background: url(img/rate-full_circles.png) no-repeat;
+	width: 0;
+	height: 100%;
+	position:relative;
+	}
+.big-text{
+font-size:14px;
+}
+#rate1{
+padding-left:8px;
+margin-top:20px;
+}
+	#rate-head{
+	background: url(img/rate-top-bg.png) 0px 0px no-repeat;
+	position:relative;
+	height:33px;
+	width:970px;
+	font: 18px Verdana, sans-serif;
+	color: #ffffff;
+	padding:10px 0 0 15px;
+	float:left;
+	}
+	#rate-main{
+	background: url(img/rate-main-bg.png) repeat-y;
+	position:relative;
+	width:985px;
+	float:left;
+	}
+		#rate-const{
+		background: url(img/rate-const.png) no-repeat;
+		position:relative;
+		width:985px;
+		height:388px;
+		color:#3e3e3e;
+		font:11px Verdana, sans-serif;
+		}
+			#rate-upper-text{
+			position:relative;
+			top:15px;
+			left:17px;
+			font-size:12px;
+			}
+			#rate-rest-descript{
+			position:relative;
+			float:left;
+			left:0px;
+			top:45px;
+			width:985px;
+			height:auto;
+			}
+				#step3-logo{
+				position:absolute;
+				left: 18px;
+				top:7px;
+				width:114px;
+				height: 114px;
+				}
+				#ramka1{
+				position: absolute;
+				left: 18px;
+				top: 7px;
+				width: 114px;
+				height: 114px;
+				border:0;
+				}
+				#rate-const-left{
+				text-align:left;
+				left: 145px;
+				position:relative;
+				width:160px;
+				background: url(img/rate-vert-line.png) right  no-repeat;
+				float:left;
+				height:123px;
+				}
+					#step3-name{
+					position:relative;
+					top:5px;
+					height: 25px;
+					font: bold 14px Verdana, sans-serif;
+					width:100%;
+					}
+					#step3-adress{
+					position:relative;
+					height: 48px;
+					width:100%;
+					}
+					#step3-agenda{
+					position:relative;
+					height: 50px;
+					width:100%;
+					}
+				#rate-const-center{
+				text-align:left;
+				left: 160px;
+				position:relative;
+				width:240px;
+				float:left;
+				height:123px;
+				}
+					#step3-detail{
+					position:absolute;
+					top:5px;
+					line-height:1.7;
+					}
+					#step3-deliv{
+					position:absolute;
+					top:72px;
+					}
+				#rate-const-right{
+				background: url(img/rate-vert-line.png) 0 0 no-repeat;
+				text-align:right;
+				left: 560px;
+				top:5px;
+				position:relative;
+				width:240px;
+				height:123px;
+				}	
+					#rate-marcs{
+					position:absolute;
+					height:20px;
+					text-align:left;
+					left:17px;
+					padding:0;
+					}
+					#cur-rate-food{
+					position:absolute;
+					top:26px;
+					left:17px;
+					width:60px;
+					}
+					#circles-cur-food{
+					position:absolute;
+					top:24px;
+					left:85px;
+					}
+					#cur-rate-service{
+					position:absolute;
+					top:56px;
+					left:17px;
+					width:60px;
+					}
+					#circles-cur-service{
+					position:absolute;
+					top:54px;
+					left:85px;
+					}
+					#cur-rate-deliv{
+					position:absolute;
+					top:86px;
+					left:17px;
+					width:60px;
+					}
+					#circles-cur-deliv{
+					position:absolute;
+					top:84px;
+					left:85px;
+					}
+			#your-rate{
+			position:relative;
+			float:left;
+			left:0px;
+			top:75px;
+			width:985px;
+			height:auto;
+			font-size:12px;
+			}	
+				#your-rate-headline{
+				position:absolute;
+				left:18px;
+				top:0px;
+				}
+				#your-rate-left{
+				position:absolute;
+				left:0px;
+				top:15px;
+				width:240px;
+				height:auto;
+				text-align:right;
+				}
+					#your-rate-food{
+					position:absolute;
+					top:28px;
+					left:17px;
+					width:50px;
+					}
+					#circles-your-food{
+					position:absolute;
+					top:26px;
+					left:75px;
+					}
+					#your-rate-service{
+					position:absolute;
+					top:65px;
+					left:17px;
+					width:50px;
+					}
+					#circles-your-service{
+					position:absolute;
+					top:63px;
+					left:75px;
+					}
+					#your-rate-deliv{
+					position:absolute;
+					top:104px;
+					left:17px;
+					width:50px;
+					}
+					#circles-your-deliv{
+					position:absolute;
+					top:102px;
+					left:75px;
+					}
+				#your-rate-right{
+				position:absolute;
+				top: 0px;
+				left:200px;
+				text-align:right;
+				height: 160px;
+				width: 785px;
+				}
+					#reg-login_text1{
+					position:absolute;
+					top: 41px;
+					left: 0px;
+					height: 20px;
+					width: 60px;
+					}
+					#reg-login_name{
+					background:url(img/rate-input-wide.png) no-repeat;
+					width: 210px;
+					height: 33px;
+					padding: 0 10px;
+					margin-left:-10px;
+					line-height: 32px!important;
+					border: none;
+					color:#bf4604;
+					text-align:left;
+					font:13px Verdana, sans-serif;
+					outline:none;
+					/*vertical-align:middle;*/
+					position:absolute;
+					top: 33px;
+					left: 75px;
+					
+					}
+					#reg-login_text2{
+					position:absolute;
+					top:41px;
+					left:274px;
+					width:60px;
+					height:20px;
+					}
+					#reg-login_log{
+					position:absolute;
+					top:33px;
+					left: 347px;
+					width: 210px;
+					height: 33px;
+					padding: 0 10px;
+					margin-left:-10px;
+					line-height: 32px;
+					background: url('img/rate-input-wide.png') no-repeat;
+					border: none;
+					color:#bf4604;
+					text-align:left;
+					font:13px Verdana, sans-serif;
+					outline:none;
+					line-height: 32px;
+					}
+					#reg-login_text3{
+					position:absolute;
+					top: 82px;
+					left: 0px;
+					height: 30px;
+					width: 60px;
+					}
+					#reg-login_text-big{
+					position:absolute;
+					top: 75px;
+					left: 65px;
+					background:url(img/rate-text-wide.png) no-repeat;
+					width: 462px;
+					height: 69px;
+					padding: 8px 10px;
+					margin:0px -10px 0px 0;
+					}
+						#reg-login_text-big textarea{
+						outline:none;
+						overflow: hidden;
+						resize:none;
+						background:none;
+						border:none;
+						width: 462px;
+						color:#bf4604;
+						text-align:left;
+						font:13px Verdana, sans-serif;
+						}
+					#reg-login_button{
+					position: absolute;
+					width: 137px;
+					height: 35px;
+					right: 85px;
+					bottom: 17px;
+					background:url(img/poll-button.png) no-repeat;
+					border:0;
+					color:#741401;
+					text-align:center;
+					font:14px Verdana, sans-serif;
+					padding:0;
+					cursor:pointer;
+					}
+						#reg-login_button:hover{
+						background:url(img/poll-button1.png) no-repeat;
+						}
+		#prev-rate-headline{
+		position:relative;
+		left:18px;
+		padding-top:15px;
+		color:#3e3e3e;
+		font:14px Verdana, sans-serif;
+		}
+		#prev-rates{
+		}
+			.prev-rate{
+			width:948px;
+			height:auto;
+			position:relative;
+			background: url(img/st3-gray-line.png) left 0px repeat-x;
+			left:19px;
+			color:#3e3e3e;
+			font:12px Verdana, sans-serif;
+			}
+			.prev-rate:first-child{
+			background:none;
+			}
+				.prev-rate-left{
+				position:relative;
+				top:0px;
+				left:0px;
+				width:190px;
+				height:100%;
+				text-align:right;
+				}
+					.prev-rate-food{
+					position:absolute;
+					top:18px;
+					left:-2px;
+					width:50px;
+					}
+					.circles-prev-food{
+					position:absolute;
+					top:16px;
+					left:56px;
+					}
+					.prev-rate-service{
+					position:absolute;
+					top:45px;
+					left:-2px;
+					width:50px;
+					}
+					.circles-prev-service{
+					position:absolute;
+					top:43px;
+					left:56px;
+					}
+					.prev-rate-deliv{
+					position:absolute;
+					top:72px;
+					left:-2px;
+					width:50px;
+					}
+					.circles-prev-deliv{
+					position:absolute;
+					top:70px;
+					left:56px;
+					}
+			.prev-rate-center{
+			background: url(img/prev-rate-center.png) 0 15px no-repeat;
+			position:absolute;
+			top:0;
+			left:190px;
+			width:187px;
+			height:100%
+			}
+				.prev-rate-text1{
+				position:absolute;
+				top:18px;
+				left:17px;
+				}
+					.prev-rate-name{
+					}
+				.prev-rate-text2{
+				position:absolute;
+				top:45px;
+				left:17px;
+				}
+					.prev-rate-date{
+					}
+			.prev-rate-right{
+			position:relative;
+			top: 0px;
+			left:377px;
+			width:600px;
+			min-height:100%;
+			height:auto;
+			}
+				.prev-rate-comment{
+				position:relative;
+				padding:17px 0 17px 0;
+				left:17px;
+				width:550px;
+				min-height:70px;
+				}
+					.prev-rate-comment1{
+					font-style:italic;
+					}
+				.prev-rate-no_comment{
+				position:relative;
+				top:18px;
+				left:17px;
+				width:550px;
+				min-height:90px;
+				}
+				.no_display{
+				display:none;
+				}
+	#st3-menu-footer{
+	background: url(img/rate-bot-bg.png) no-repeat;
+	height:11px;
+	position:relative;
+	float:left;
+	width:985px;
+	}

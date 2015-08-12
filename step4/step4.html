@@ -1,0 +1,219 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="Copyright" content="Globelix Investment Ltd">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta name="keywords" content="<?php print $keywords;?>">
+	<meta name="description" content="<?php print $description;?>">
+	<link rel="stylesheet" href="step4.css" type="text/css" />
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+	<!-- <script type="text/javascript" src="js/jquery-1.6.1.js"></script> -->
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="cusel.css"></script>
+	<!-- <script type="text/javascript" src="js/jquery-1.6.1.js"></script> -->
+	<script type="text/javascript" src="js/cusel-min-2.4.1.js"></script>
+	<!-- <script type="text/javascript" src="js/cusel.js"></script> -->
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+	<title><?php print $title; ?></title>
+	<link href="page.css" rel="stylesheet" type="text/css">
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="page_ie.css" /><![endif] -->
+	<script type="text/javascript">
+	<!--
+	jQuery(document).ready(function(){
+
+	var params = {
+			changedEl: ".lineForm select",
+			visRows: 5,
+			scrollArrows: true
+		}
+
+		cuSel(params);
+		
+		var params = {
+			changedEl: "#city",
+			scrollArrows: false
+		}
+
+		cuSel(params);
+	-->
+	</script>
+	<?php 	foreach ($styles as $style): 
+		 	print $style; 
+	 		endforeach; ?>
+	
+	<!-- <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script> -->
+	<?php 	foreach ($scripts as $script):  
+	  		print $script;  
+	 		endforeach; ?>
+
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div id="white-top"><!-- пустышка для фона --></div>
+		<div id="white"> <!-- еще одна -->
+		</div>
+		<div id='logo'><?php print $text_logo;?>
+		</div>
+		<div id='pointer'><?php print $text_slogan;?>
+		</div>
+		<div id='login'>
+<?php if (loggedin($UserID)){ ?>
+		<a href='profile.php' id='name'><?php print loggedin($UserID);?></a> - <a href='delcookie.php?id=<?php print $UserID; ?> id='logout'><?php print $text_login[1];?></a>;
+<?php	}else{ ?>
+		<a href='' id='login1'><?php print $text_login[0];?></a> / <a href='signup.php' id='signup'><?php print $text_login[2];?></a>
+<?php	}; ?>
+		</div>
+
+		<!-- флажочки: -->
+        <?php 
+		$url=$_SERVER['REQUEST_URI'];
+		$pos=strrpos($url,'/');
+		$rest=substr($url,$pos);
+		$enurl= "http://".$_SERVER['SERVER_NAME'].'/en'.$rest;
+		$uaurl= "http://".$_SERVER['SERVER_NAME'].'/ua'.$rest;
+		$ruurl= "http://".$_SERVER['SERVER_NAME'].'/ru'.$rest;
+		?>
+		<a href='<?php print $uaurl;?>'><div id='uk'></div></a>
+		<a href='<?php print $ruurl;?>'><div id='ru'></div></a>
+		<a href='<?php print $enurl;?>'><div id ='en'></div></a>
+		
+		<!-- фоны: -->
+		<div id='gray_top'></div>
+		<div id='topfood'></div>
+		
+		<!-- соц. сети: -->
+		<a href='http://www.facebook.com/UfoodOnlineFoodOrdering' id='facebook'></a>
+		<a href='http://vkontakte.ru/club25362761' id='BKontakt'></a>
+		<a href='https://twitter.com/#!/UFOODua' id='tweeter'></a>
+		<div id='menu'>
+			<a href='' class='menuitem' id='home'><?php print $text_menu[0];?></a>
+			<a href='' class='menuitem' id='so'><?php print $text_menu[1];?></a>
+			<a href='' class='menuitem' id='er'><?php print $text_menu[2];?></a>
+			<a href='' class='menuitem' id='rr'><?php print $text_menu[3];?></a>
+			<a href='' class='menuitem' id='help'><?php print $text_menu[4];?></a>
+			<a href='' class='menuitem' id='cont'><?php print $text_menu[5];?></a>
+		</div>
+	</div>
+	<div id="content">
+		<div id='gray'></div> 
+		<div id='content1'>  
+			<div id="rest-menu-4"> <!-- левая широкая колонка -->
+				<div id="st4-detail">
+					<div id="st4-detail-head">Детали доставки</div>
+					<div id="st4-detail-main">
+						<div id="st4-detail-left">
+							<form>
+								<div id="st4-login_text0">Зарегистрированный пользователь</div>
+								<span id="st4-login_text1">Login (e-mail):</span>
+								<input id="st4-login_log" type="text" />
+								<span id="st4-login_text2">Password:</span>
+								<input id="st4-login_pas" type="password" />
+								<span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+								<span id="st4-login_text3">Remember password</span>
+								<input id="st4-login_button1" value="Login" type="submit">
+								<a href="" id="st4-login_link1">Forgot your password?</a>
+							</form>
+						</div><!-- st4-detail-left -->
+						<div id="st4-detail-right">
+							<form>
+								<div id="st4-login_text4">Адрес доставки</div>
+								<span id="st4-login_text5">Имя, Фамилия:</span>
+								<input class="st4-input" id="st4-login_name" type="text" value="Наталия Кучмистая" />
+								<span id="st4-login_text6">Моб. телефон:</span>
+								<input class="st4-input" id="st4-login_tel" type="text" />
+								<span id="st4-login_text7">Район:</span>
+								<div class="lineForm">
+									<select id="city" name="city" tabindex="1" onChange="alert('произошел onchange')">
+										<option class="allreg" selected="selected" disabled="disabled" value="0">------ All regions ------</option>
+										<option value="1">Darnytskyi</option>
+										<option value="2">Desnianskyi</option>
+										<option value="3">Dniprovskyi</option>
+										<option value="4">Holosiivskyi</option>
+										<option value="5">Obolonskyi</option>
+										<option value="6">Pecherskyi</option>
+										<option value="7">Podilskyi</option>
+										<option value="8">Shevchenkivskyi</option>
+										<option value="9">Solomianskyi</option>
+										<option value="10">Svyatoshinskyi</option>
+									</select>
+								</div>
+								<span id="st4-login_text8">Улица:</span>
+								<input class="st4-input" id="st4-login_street" type="text" />
+								<span id="st4-login_text9">№ дома:</span>
+								<input class="st4-input" id="st4-login_house" type="text" />
+								<span id="st4-login_text10">№ квартиры/офиса:</span>
+								<input class="st4-input" id="st4-login_app" type="text" />
+								<span id="st4-login_text11">email:</span>
+								<input class="st4-input" id="st4-login_email" type="text" />
+								<span id="st4-login_text12">Дополнительная<br />информация:</span>
+								<textarea id="st4-login_text-big" rows="4"></textarea>
+								<span id="st4-login_text13">Подтверждение заказа будет отправлено<br />по e-mail через несколько минут.<br />Вы также можете получить подтверждение<br />заказа по:</span>
+								<span class="niceCheck" id="niceCheck1"><input type="checkbox" name="ch1" /></span>
+								<span id="st4-login_text14">Телефону</span>
+								<input id="st4-login_button2" value="Заказать" type="submit">
+							</form>
+						</div><!-- st4-detail-right -->
+					</div><!-- st4-detail-main -->
+					<div id="st4-detail-footer"></div>
+				</div><!-- st4-detail -->
+			</div> <!-- rest-menu-4 -->
+			<div id="cart">
+				<div id="cart-head">Ваш заказ</div>
+				<div id="cart-main">
+					<div class="cart-product">
+						<div class="cart-prod-name">Ассорти сырное, 1500 г</div>
+						<div class="cart-prod-text">
+							<span class="cart-prod-quant">99</span>
+							x
+							<span class="cart-prod-price">1000</span>
+						</div>
+						<div class="cart-prod-cost">1000</div>
+					</div><!-- cart-product -->
+				</div>
+				<div id="cart-footer">
+					<div id="cart-footer-text">Всего:</div>
+					<div id="cart-footer-total">1000</div>
+					<input id="st4-button-cart" type="button" value="Изменить" />
+				</div>
+			</div><!-- cart -->
+		</div><!-- content1 -->
+	</div> <!-- content -->
+	<div id="clear">
+	</div>
+	<div id="foot">
+	</div>
+</div>
+<div id="footer">
+		<img id='foodniz' src="img/food-niz.png"></img>
+		<div id='menuniz'>
+			<a href='' class='footermenu' id='f_home'><?php print $text_menu[0];?></a> <!-- здесь айди на всякий случай, в цсс они не прописаны -->
+			<a href='' class='footermenu' id='f_so'><?php print $text_menu[1];?></a>
+			<a href='' class='footermenu' id='f_yoy'><?php print $text_menu[2];?></a>
+			<a href='' class='footermenu' id='f_rr'><?php print $text_menu[3];?></a>
+			<a href='' class='footermenu' id='f_help'><?php print $text_menu[4];?></a>
+			<a href='' class='footermenu' id='f_cont'><?php print $text_menu[5];?></a>
+			<p id='copy'><?php print $text_copyright;?></p>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23454047-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

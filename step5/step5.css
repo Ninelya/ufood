@@ -1,0 +1,316 @@
+#help-online{
+position: absolute;
+width: 171px;
+height: 113px;
+left: 834px;
+top: 33px;
+background:url(img/help.png) no-repeat;
+color:#333333;
+text-align:center;
+font:12px Verdana, sans-serif;
+margin:0;
+}
+	#a-help{
+	color:#333333;
+	}
+	#help-online1{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 14px;
+	}
+	#help-online2{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 37px;
+	color:#03a103;
+	font-weight:bold;
+	}
+	#help-online3{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 82px;
+	top: 65px;
+	line-height:1.5;
+	}
+#rest-menu{
+float:left;
+position:relative;
+width:800px;
+margin: 20px 0 0 0;
+padding-left: 8px;
+}
+	#st3-menu{
+	}
+		#st3-menu-head{
+		background: url(img/st5-menu-bg.png) /* 1px 0 */ no-repeat;
+		position:relative;
+		height:32px;
+		width:796px;
+		font: 18px Verdana, sans-serif;
+		color: #ffffff;
+		padding:9px 0 0 15px;
+		}
+		#st3-menu-main{
+		background: url(img/st5-menu-main.png) repeat-y;
+		}
+			.st5-texts{
+			font:12px Verdana, sans-serif;
+			color:#3e3e3e;
+			
+			}
+			.st5-texts-big{
+			font:16px Verdana, sans-serif;
+			color:#3e3e3e;
+			}
+			.st5-texts-br{
+			font:12px Verdana, sans-serif;
+			color:#bf6404;
+			}
+			.st5-texts-link{
+			font:12px Verdana, sans-serif;
+			color:#bf6404;
+			text-decoration:none;
+			}
+			#thanks{
+			font:18px Verdana, sans-serif;
+			color:#3e3e3e;
+			position:relative;
+			left:16px;
+			height: 40px;
+			padding-top:20px;
+			}
+			#st5-text1{
+			position:relative;
+			left:16px;
+			height: 25px;
+			}
+			#st5-gray-top{
+			background: url(img/st5-gray-top.png) no-repeat;
+			height:10px;
+			position:relative;
+			left:16px;
+			}
+			#st5-gray-box{
+			background: url(img/st5-main.png) repeat-y;
+			position:relative;
+			left:16px;
+			}
+				#st5-text2{
+				position:relative;
+				left:17px;
+				height: 25px;
+				padding-top: 5px;
+				}
+				#st5-detail{
+				left:16px;
+				position:relative;
+				height:100px;
+				width:725px;
+				border: 1px solid #e3e3e3;
+				background-color: #ffffff;
+				}
+					#st5-text3{
+					text-align:right;
+					width:125px;
+					line-height:1.5;
+					padding-top:3px;
+					}
+					#st5-text-order{
+					top:-88px;
+					left:128px;
+					position:relative;
+					width:590px;
+					}
+					#st5-text-customer{
+					top:-84px;
+					left:128px;
+					position:relative;
+					width:590px;
+					}
+					#st5-text-tel{
+					top:-80px;
+					left:128px;
+					position:relative;
+					width:590px;
+					}
+					#st5-text-address{
+					top:-76px;
+					left:128px;
+					position:relative;
+					width:590px;
+					}
+					#st5-text-info{
+					top:-72px;
+					left:128px;
+					position:relative;
+					width:590px;
+					}
+				.st5-img1{
+				background: url(img/st5-gray-line.png) 0 17px no-repeat;
+				position:relative;
+				height:32px;
+				width:724px;
+				left:17px;
+				}
+				#st5-text4{
+				position:relative;
+				left:16px;
+				height:20px;
+				}
+				#st5-table{
+				position:relative;
+				left:16px;
+				font:12px Verdana, sans-serif;
+				color:#3e3e3e;
+				border: 1px solid #e3e3e3;
+				width:725px;
+				background-color:#ffffcc;
+				}
+					.st5-table-center{
+					text-align:center;
+					}
+					#st5-table-head{
+					height:31px;
+					font-weight:bold;
+					}
+						#st5-th1{
+						position:absolute;
+						height:24px;
+						width:463px;
+						top:0;
+						left:0;
+						padding-top:7px;
+						border-bottom:1px solid #e3e3e3;
+						border-right:1px solid #e3e3e3;
+						}
+						#st5-th2{
+						position:absolute;
+						height:24px;
+						width:88px;
+						top:0;
+						left:464px;
+						padding-top:7px;
+						border-bottom:1px solid #e3e3e3;
+						border-right:1px solid #e3e3e3;
+						}
+						#st5-th3{
+						position:absolute;
+						height:24px;
+						width:86px;
+						top:0;
+						left:553px;
+						padding-top:7px;
+						border-bottom:1px solid #e3e3e3;
+						border-right:1px solid #e3e3e3;
+						}
+						#st5-th4{
+						position:absolute;
+						height:24px;
+						width:85px;
+						top:0;
+						left:640px;
+						padding-top:7px;
+						border-bottom:1px solid #e3e3e3;
+						}
+					.st5-table-tr{
+					background-color:#ffffff;
+					height:36px;
+					position:relative;
+					margin-top:1px;
+					}
+						.st5-td1{
+						position:absolute;
+						height:26px;
+						width:453px;
+						top:0;
+						left:0;
+						padding-top:10px;
+						padding-left:10px;
+						border-bottom:1px solid #e3e3e3;
+						border-right:1px solid #e3e3e3;
+						}
+						.st5-td2{
+						position:absolute;
+						height:26px;
+						width:88px;
+						top:0;
+						left:464px;
+						padding-top:10px;
+						border-bottom:1px solid #e3e3e3;
+						border-right:1px solid #e3e3e3;
+						}
+						.st5-td3{
+						position:absolute;
+						height:26px;
+						width:86px;
+						top:0;
+						left:553px;
+						padding-top:10px;
+						border-bottom:1px solid #e3e3e3;
+						border-right:1px solid #e3e3e3;
+						}
+						.st5-td4{
+						position:absolute;
+						height:26px;
+						width:85px;
+						top:0;
+						left:640px;
+						padding-top:10px;
+						border-bottom:1px solid #e3e3e3;
+						}
+					#st5-table-bot{
+					height:auto;
+					position:relative;
+					font-weight:bold;
+					}
+						#st5-tb{
+						text-align:right;
+						position:absolute;
+						height:39px;
+						width:639px;
+						top:-2px;
+						left:0;
+						line-height:1.5;
+						}
+						.numbers{
+						position:relative;
+						top:0;
+						text-align:center;
+						left:640px;
+						width:85px;
+						height:auto;
+						}
+						#subtotal-2{
+						margin-top:7px;
+						}
+						#bonuses-2{
+						margin-top:4px;
+						}
+						#st5-table-delivery{
+						margin-top:4px;
+						}
+						#st5-table-summ{
+						margin:4px 0 10px 0;
+						}
+				#st5-text5{
+				position:relative;
+				left:16px;
+				}
+			#st5-gray-bottom{
+			background: url(img/st5-bottom.png) no-repeat;
+			height:10px;
+			position:relative;
+			left:16px;
+			}
+			#st5-trans{
+			height:6px;
+			}
+		#st3-menu-footer{
+		background: url(img/st5-menu-bottom.png) no-repeat;
+		height:12px;
+		}

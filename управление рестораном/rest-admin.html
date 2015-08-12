@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>ra-current</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="Copyright" content="Globelix Investment Ltd">
+	<meta name="keywords" content="<?php print $keywords;?>">
+	<meta name="description" content="<?php print $description;?>">
+	
+	<link rel="stylesheet" href="jquery.selectBox.s1.css" type="text/css" />
+	<link rel="stylesheet" href="rest-admin.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="page.css" type="text/css"> -->
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+	<?php 	foreach ($styles as $style): 
+		 	print $style; 
+	 		endforeach; ?>
+	
+	<!-- <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script> -->
+	<?php 	foreach ($scripts as $script):  
+	  		print $script;  
+	 		endforeach; ?>
+
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div id="white-top"></div><!-- пустышка для фона -->
+		<div id="white"></div><!--еще одна -->
+		<div id='logo'>Сеть заказа и доставки еды</div>
+		<div id="login">
+			<a id="name" href="">Наталия Кучмистая</a><br />
+			<div id="rest-name">Руставели</div>
+		</div>
+		<div id="ra-menu">
+			<a id="ra-current" class="active" href="">Текущие заказы</a>
+			<a id="ra-archive" href="">Архив</a>
+			<a id="ra-exit" href="">Выход</a>
+		</div>
+	</div>
+	<div id="content">
+		<div id='gray'></div> 
+		<div id='content1'>  
+			<div id="ra-opened" class="inactive">
+				<input class="ra-but" id="ra-but-opened" type="button" value="Открыто">
+				<input class="ra-but" id="ra-but-close" type="button" value="Закрыть">
+			</div>
+			<div id="ra-closed">
+				<input class="ra-but" id="ra-but-open" type="button" value="Открыть">
+				<input class="ra-but" id="ra-but-closed" type="button" value="Закрыто">
+			</div>
+			<div id="ra-chat" class="inactive"></div>
+			<table id="ra-table">
+				<col /><col /><col /><col /><col />
+				<tr>
+					<th>№ заказа</th>
+					<th>Время / Дата</th>
+					<th>Заказ</th>
+					<th>Клиент</th>
+					<th>Управление</th>
+				</tr>
+				<tr>
+					<td class="ra-number">3459879</td>
+					<td class="time">22:15<br />15.10.2011</td>
+					<td class="ra-order">
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 смПицца “Фирменная”</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-empty"></div> <!-- распорка -->
+						<div class="ra-prod-bot">
+							<div class="ra-prod-text">Доставка:</div>
+							<div class="ra-prod-deliv">9999.99</div>
+							<div class="ra-prod-currency">грн.</div>
+							<br />
+							<div class="ra-prod-text">Всего: </div>
+							<div class="ra-prod-total">9999.99</div>
+							<div class="ra-prod-currency">грн.</div>
+						</div>
+					</td>
+					<td class="ra-client">
+						Наталия Хлыстун<br />
+						Святошинский район<br />
+						улица пер. Краснозаводской<br />
+						дом 2/13<br />
+						квартира 242<br />
+						телефон 050-970-40-98<br />
+						Доп. информация: Домофон не работает, позвонить на мобильный, когда курьер будет возле подъезда.
+					</td>
+					<td>
+						<input class="ra-but-s ra-but-print" type="button" value="Печать">
+						<input class="ra-but-s ra-but-yes" type="button" value="Принять">
+						<input class="ra-but-s ra-but-no" type="button" value="Отказать">
+					</td>
+				</tr>
+				<tr>
+					<td class="ra-number">3459879</td>
+					<td class="time">22:15<br />15.10.2011</td>
+					<td class="ra-order">
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-empty"></div> <!-- распорка -->
+						<div class="ra-prod-bot">
+							<div class="ra-prod-text">Доставка:</div>
+							<div class="ra-prod-deliv">9999.99</div>
+							<div class="ra-prod-currency">грн.</div>
+							<br />
+							<div class="ra-prod-text">Всего: </div>
+							<div class="ra-prod-total">9999.99</div>
+							<div class="ra-prod-currency">грн.</div>
+						</div>
+					</td>
+					<td class="ra-client">
+						Наталия Хлыстун<br />
+						Святошинский район<br />
+						улица пер. Краснозаводской<br />
+						дом 2/13<br />
+						квартира 242<br />
+						телефон 050-970-40-98<br />
+						Доп. информация: Домофон не работает, позвонить на мобильный, когда курьер будет возле подъезда.
+					</td>
+					<td>
+						<input class="ra-but-s ra-but-print" type="button" value="Печать">
+						<input class="ra-but-s ra-but-yes" type="button" value="Принять">
+						<input class="ra-but-s ra-but-no" type="button" value="Отказать">
+					</td>
+				</tr>
+				<tr>
+					<td class="ra-number">3459879</td>
+					<td class="time">22:15<br />15.10.2011</td>
+					<td class="ra-order">
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-prod">
+							<div class="ra-prod-name">Пицца “Фирменная”, 42 см</div>
+							<div class="ra-prod-right">
+								<span class="ra-prod-quant">1</span>
+								<span class="ra-prod-x">х</span>
+								<span class="ra-prod-price">999.99</span>
+								<span class="ra-prod-cost">9999.99</span>
+							</div>
+						</div>
+						<div class="ra-empty"></div> <!-- распорка -->
+						<div class="ra-prod-bot">
+							<div class="ra-prod-text">Доставка:</div>
+							<div class="ra-prod-deliv">9999.99</div>
+							<div class="ra-prod-currency">грн.</div>
+							<br />
+							<div class="ra-prod-text">Всего: </div>
+							<div class="ra-prod-total">9999.99</div>
+							<div class="ra-prod-currency">грн.</div>
+						</div>
+					</td>
+					<td class="ra-client">
+						Наталия Хлыстун<br />
+						Святошинский район<br />
+						улица пер. Краснозаводской<br />
+						дом 2/13<br />
+						квартира 242<br />
+						телефон 050-970-40-98<br />
+						Доп. информация: Домофон не работает, позвонить на мобильный, когда курьер будет возле подъезда.
+					</td>
+					<td>
+						<input class="ra-but-s ra-but-print" type="button" value="Печать">
+						<input class="ra-but-s ra-but-yes" type="button" value="Принять">
+						<input class="ra-but-s ra-but-no" type="button" value="Отказать">
+					</td>
+				</tr>
+			</table>
+		</div> <!--content1 -->
+	</div> <!-- content -->
+	<div id="clear"></div>
+	<div id="foot"></div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

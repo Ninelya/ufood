@@ -1,0 +1,29 @@
+.logo{
+width:183px;
+height:114px;
+position:static;
+}
+	.ramka1{
+	border: 0 none;
+    height: 116px;
+    left: 47px;
+    position: absolute;
+    top: 12px;
+    width: 116px;
+	
+	}
+	.new-45{
+	color:#ffffff;
+	font:bold 16px Verdana, sans-serif;
+	position:absolute;
+	left:108px;
+	top:24px;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	text-align:center;
+	height:20px;
+	width:70px;
+	}

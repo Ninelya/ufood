@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Recommend</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="Copyright" content="Globelix Investment Ltd">
+	<meta name="keywords" content="<?php print $keywords;?>">
+	<meta name="description" content="<?php print $description;?>">
+	
+	<link rel="stylesheet" href="jquery.selectBox.s1.css" type="text/css" />
+	<link rel="stylesheet" href="after3.css" type="text/css" />
+	<link rel="stylesheet" href="page.css" type="text/css">
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+	<?php 	foreach ($styles as $style): 
+		 	print $style; 
+	 		endforeach; ?>
+	
+	<!-- <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script> -->
+	<?php 	foreach ($scripts as $script):  
+	  		print $script;  
+	 		endforeach; ?>
+
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div id="white-top"><!-- пустышка для фона --></div>
+		<div id="white"> <!-- еще одна -->
+		</div>
+		<div id='logo'><?php print $text_logo;?>
+		</div>
+		<div id='pointer'><?php print $text_slogan;?>
+		</div>
+		<div id='login'>
+<?php if (loggedin($UserID)){ ?>
+		<a href='profile.php' id='name'><?php print loggedin($UserID);?></a> - <a href='delcookie.php?id=<?php print $UserID; ?> id='logout'><?php print $text_login[1];?></a>;
+<?php	}else{ ?>
+		<a href='' id='login1'><?php print $text_login[0];?></a> / <a href='signup.php' id='signup'><?php print $text_login[2];?></a>
+<?php	}; ?>
+		</div>
+
+		<!-- флажочки: -->
+        <?php 
+		$url=$_SERVER['REQUEST_URI'];
+		$pos=strrpos($url,'/');
+		$rest=substr($url,$pos);
+		$enurl= "http://".$_SERVER['SERVER_NAME'].'/en'.$rest;
+		$uaurl= "http://".$_SERVER['SERVER_NAME'].'/ua'.$rest;
+		$ruurl= "http://".$_SERVER['SERVER_NAME'].'/ru'.$rest;
+		?>
+		<a href='<?php print $uaurl;?>'><div id='uk'></div></a>
+		<a href='<?php print $ruurl;?>'><div id='ru'></div></a>
+		<a href='<?php print $enurl;?>'><div id ='en'></div></a>
+		
+		<!-- фоны: -->
+		<div id='gray_top'></div>
+		<div id='topfood'></div>
+		
+		<!-- соц. сети: -->
+		<a href='http://www.facebook.com/UfoodOnlineFoodOrdering' id='facebook'></a>
+		<a href='http://vkontakte.ru/club25362761' id='BKontakt'></a>
+		<a href='https://twitter.com/#!/UFOODua' id='tweeter'></a>
+		<div id='menu'>
+			<a href='' class='menuitem' id='home'><?php print $text_menu[0];?></a>
+			<a href='' class='menuitem' id='so'><?php print $text_menu[1];?></a>
+			<a href='' class='menuitem' id='er'><?php print $text_menu[2];?></a>
+			<a href='' class='menuitem' id='rr'><?php print $text_menu[3];?></a>
+			<a href='' class='menuitem' id='help'><?php print $text_menu[4];?></a>
+			<a href='' class='menuitem' id='cont'><?php print $text_menu[5];?></a>
+		</div>
+	</div>
+	<div id="content">
+		<div id='gray'></div> 
+		<div id='content1'>  
+			<div id="after3-holder"> <!-- левая широкая колонка -->
+				<div id="after3-detail-head"><span id="reg-user">Thank you for recommendation</div>
+				<div id="after3-detail-main">
+					<div id="after3-text">
+						We highly appreciate your input.<br />
+						We will contact the restaurant in the nearest future and soon you will be able to order your favourite dishes from your favourite restaurant on UFood.<br /><br />
+						Always at your service,<br />
+						UFood Team
+					</div>
+				</div>
+			</div> 
+			<div id="after3-right-fotos"></div>
+		</div><!-- content1 -->
+	</div> <!-- content -->
+	<div id="clear">
+	</div>
+	<div id="foot">
+	</div>
+</div>
+<div id="footer">
+		<img id='foodniz' src="img/food-niz.png" />
+		<div id='menuniz'>
+			<a href='' class='footermenu' id='f_home'><?php print $text_menu[0];?></a> <!-- здесь айди на всякий случай, в цсс они не прописаны -->
+			<a href='' class='footermenu' id='f_so'><?php print $text_menu[1];?></a>
+			<a href='' class='footermenu' id='f_yoy'><?php print $text_menu[2];?></a>
+			<a href='' class='footermenu' id='f_rr'><?php print $text_menu[3];?></a>
+			<a href='' class='footermenu' id='f_help'><?php print $text_menu[4];?></a>
+			<a href='' class='footermenu' id='f_cont'><?php print $text_menu[5];?></a>
+			<p id='copy'><?php print $text_copyright;?></p>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23454047-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

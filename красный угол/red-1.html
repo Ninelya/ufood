@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="red.css" type="text/css" />
+<link href="page.css" rel="stylesheet" type="text/css">
+<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+
+<script type="text/javascript" src="js/jquery-1.6.1.js"></script> <!-- checkbox -->
+<script type="text/javascript">
+<!--
+jQuery(document).ready(function(){
+if ((jQuery.browser.msie == true)&(jQuery.browser.version <=8))
+{
+var deg2radians = Math.PI * 2 / 360,
+deg = 45;
+rad = deg * deg2radians,
+costheta = Math.cos(rad),
+sintheta = Math.sin(rad);
+jQuery('.new-45').css({
+filter: 'progid:DXImageTransform.Microsoft.Matrix(M11='+costheta+', M12='+(-1)*sintheta+', M21='+sintheta+', M22='+costheta+', SizingMethod="auto expand", enabled=true)'
+});
+};
+});
+-->
+</script>
+</head>
+<body>
+<div id='content1'>  
+	<div class="logo">
+		<img class="ramka1" src="img/ramka2-new.png" /><!-- меняем картинку -->
+		<div class='new-45'>-88%</div> <!-- добавляем блок -->
+	</div>
+</div><!-- content1 -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+#infoblock {
+background: url("img/fon-info.png") no-repeat scroll 0 0 transparent;
+height: 227px;
+left: 35px;
+position: absolute;
+top: 0;
+width: 658px;
+color:#2a6002;
+font:12px Verdana, sans-serif;
+}
+	#bonus-sys-circle{
+	position:absolute;
+	height:91px;
+	top:18px;
+	right:18px;
+	font:24px Verdana,sans-serif;
+	color:#fff;
+	background: url(img/Bonus-sys-2.png) no-repeat;
+	width:93px;
+	padding:24px 0px 0px 24px;
+	}
+	#info-but{
+	background: url(img/info-but-0.png) no-repeat;
+	height: 54px;
+    left: 18px;
+    position: absolute;
+    top: 17px;
+    width: 153px;
+	color:#710202;
+	font:22px Verdana, sans-serif;
+	text-align:center;
+	text-decoration:none;
+	line-height:25px;
+	outline: none;
+	text-shadow:1px 1px 1px #fbcc9b;
+	}
+		#info-but:hover{
+		background: url(img/info-but-1.png) no-repeat;
+		}
+		#info-but:active{
+		background: url(img/info-but-2.png) no-repeat;
+		}
+	#info-text-top{
+	text-align:center;
+	position: absolute;
+	top: 0;
+	width: 658px;
+	font-size:18px;
+	margin-top:14px;
+	}
+		#info-orng{
+		color:#ff830a;
+		}
+	#info-img{
+	position: absolute;
+	top: 82px;
+	left: 21px;
+	}
+	#info-star{
+	position: absolute;
+	bottom:31px;
+	left: 17px;
+	}
+	#info-text-bot{
+	position: absolute;
+	bottom: 0;
+	width: 625px;
+	padding:17px 17px 17px 31px;
+	}
+		#info-link{
+		text-decoration:none;
+		outline: none;
+		color:#bf4604;
+		}

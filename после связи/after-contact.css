@@ -1,0 +1,67 @@
+#help-online{
+position: absolute;
+width: 171px;
+height: 113px;
+left: 834px;
+top: 33px;
+background:url(img/help.png) no-repeat;
+color:#333333;
+text-align:center;
+font:12px Verdana, sans-serif;
+margin:0;
+}
+	#a-help{
+	color:#333333;
+	}
+	#help-online1{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 14px;
+	}
+	#help-online2{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 37px;
+	color:#03a103;
+	font-weight:bold;
+	}
+	#help-online3{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 82px;
+	top: 65px;
+	line-height:1.5;
+	}
+#after-cont-holder{
+float:left;
+position:relative;
+width:780px;
+margin: 20px 0 0 0;
+padding-left: 8px;
+}
+	#after-cont-head{
+	background: url(img/st5-menu-bg.png) no-repeat;
+	position:relative;
+	height:34px;
+	width:796px;
+	font: 18px Verdana, sans-serif;
+	color: #ffffff;
+	padding:9px 0 0 15px;
+	}
+	#after-cont-main{
+	position:relative;
+	background: url(img/after-contact.png) no-repeat;
+	height:146px;
+	width:796px;
+	padding:15px 0 0 17px;
+	font: 12px Verdana, sans-serif;
+	color: #3e3e3e;
+	}
+		#after-cont-text-1{
+		line-height:1.5;
+		}

@@ -1,0 +1,21 @@
+/*step2.css:*/
+#step2_search_button:hover{
+background: url('img/search_button1.png') no-repeat;
+}
+.step2_menu_button:hover{
+background: url(img/menu_button1.png) no-repeat;
+}
+
+/*step3.css:*/
+#st3-button-cart:hover{
+background:url(img/poll-button1.png) no-repeat;
+}
+.st3-button-plus:hover{
+background: url(img/st3-button-plus1.png) no-repeat;
+}
+.st3-button-minus:hover{
+background: url(img/st3-button-minus1.png) no-repeat;
+}
+.st3-button-plus{
+cursor:pointer;
+}

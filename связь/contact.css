@@ -1,0 +1,204 @@
+#help-online{
+position: absolute;
+width: 171px;
+height: 113px;
+left: 834px;
+top: 33px;
+background:url(img/help.png) no-repeat;
+color:#333333;
+text-align:center;
+font:12px Verdana, sans-serif;
+margin:0;
+}
+	#a-help{
+	color:#333333;
+	}
+	#help-online1{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 14px;
+	}
+	#help-online2{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 37px;
+	color:#03a103;
+	font-weight:bold;
+	}
+	#help-online3{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 82px;
+	top: 65px;
+	line-height:1.5;
+	}
+.cont-input{
+background:url(img/text-field.png) no-repeat;
+width: 168px;
+height: 32px;
+padding: 0 10px;
+margin-left:-10px;
+line-height: 32px;
+border: none;
+color:#bf4604;
+text-align:left;
+font:13px Verdana, sans-serif;
+outline:none;
+vertical-align:middle;
+}
+#cont-holder{
+float:left;
+position:relative;
+width:780px;
+margin: 20px 0 0 0;
+padding-left: 8px;
+}
+	#cont-detail-head{
+	background: url(img/st5-menu-bg.png) no-repeat;
+	position:relative;
+	height:34px;
+	width:796px;
+	font: 18px Verdana, sans-serif;
+	color: #ffffff;
+	padding:9px 0 0 15px;
+	}
+	#cont-detail-main{
+	position:relative;
+	background: url(img/contact-bg.png) no-repeat;
+	height:420px;
+	width:796px;
+	}
+		.brown{
+		color:#bf4604;
+		}
+		#cont-text{
+		font: 12px Verdana, sans-serif;
+		color: #3e3e3e;
+		position: absolute;
+		left:17px;
+		top:15px;
+		}
+			#cont-text-1{
+			line-height:1.5;
+			}
+		form{
+		color:#3e3e3e;
+		text-align:right;
+		font:12px Verdana, sans-serif;
+		}
+		#cont-detail-left{
+		position:absolute;
+		left:58px;
+		height:160px;
+		width:315px;
+		top:101px;
+		}
+			#cont-login_text2{
+			position:absolute;
+			top: 57px;
+			right: 232px;
+			height: 20px;
+			width: 140px;
+			}
+			#cont-login_name{
+			position:absolute;
+			top: 49px;
+			right: 39px;
+			line-height: 32px;
+			}
+			#cont-login_text3{
+			position:absolute;
+			top: 99px;
+			right: 232px;
+			height: 20px;
+			width: 140px;
+			}
+			.lineForm5{
+			position:absolute;
+			top: 91px;
+			right: 39px;
+			z-index:2;
+			}
+		#cont-detail-right{
+		position: absolute;
+		width: 279px;
+		height: 160px;
+		left: 340px;
+		top: 101px;
+		}
+			#cont-login_text4{
+			position:absolute;
+			top: 57px;
+			right: 210px;
+			height: 20px;
+			width: 140px;
+			}
+			#cont-login_tel{
+			position:absolute;
+			top: 49px;
+			right: 17px;
+			line-height: 32px;
+			}
+			#cont-login_text5{
+			position:absolute;
+			top: 99px;
+			right: 210px;
+			height: 20px;
+			width: 140px;
+			}
+			#cont-login_street{
+			position:absolute;
+			top: 91px;
+			right: 17px;
+			line-height: 32px;
+			}
+		#cont-login_text6{
+		position:absolute;
+		top: 237px;
+		left: 0px;
+		height: 30px;
+		width: 140px;
+		}
+		#cont-login_text-big{
+		position:absolute;
+		top: 234px;
+		right: 204px;
+		background:url(img/contact-vbig-text.png) no-repeat;
+		width: 436px;
+		height: 119px;
+		padding: 4px 10px;
+		margin:0px -10px 0px 0;
+		}
+			#cont-login_text-big textarea{
+			outline:none;
+			overflow: hidden;
+			resize:none;
+			background:none;
+			border:none;
+			width: 100%;
+			color:#bf4604;
+			text-align:left;
+			font:13px Verdana, sans-serif;
+			}
+		#cont-login_button{
+		position: absolute;
+		width: 146px;
+		height: 34px;
+		right: 194px;
+		bottom: 17px;
+		background:url(img/reg-button.png) no-repeat;
+		border:0;
+		color:#741401;
+		text-align:center;
+		font:14px Verdana, sans-serif;
+		padding:0;
+		cursor:pointer;
+		}
+			#cont-login_button:hover{
+			background-position:0 -34px;
+			}

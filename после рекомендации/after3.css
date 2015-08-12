@@ -1,0 +1,41 @@
+#after3-holder{
+float:left;
+position:relative;
+width:780px;
+margin: 20px 0 0 0;
+padding-left: 8px;
+}
+	#after3-detail-head{
+	background: url(img/step3-menu-bg.png) no-repeat;
+	position:relative;
+	height:34px;
+	width:727px;
+	font: 18px Verdana, sans-serif;
+	color: #ffffff;
+	padding:9px 0 0 15px;
+	}
+	#after3-detail-main{
+	position:relative;
+	background: url(img/after-bg.png) no-repeat;
+	height:348px;
+	width:742px;
+	}
+		#after3-text{
+		font: 12px Verdana, sans-serif;
+		color: #3e3e3e;
+		position: absolute;
+		left:17px;
+		top:10px;
+		line-height:2.2;
+		width:708px;
+		}
+	#after3-right-fotos{
+	position:absolute;
+	top: 35px;
+	right: 18px;
+	height: 391px;
+	width: 226px;
+	background:url(img/boy-with-pizza.png) no-repeat;
+	color:#acaaaa;
+	font:14px Verdana, sans-serif;
+	}

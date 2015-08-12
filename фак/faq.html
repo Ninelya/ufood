@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>faq</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="Copyright" content="Globelix Investment Ltd">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta name="keywords" content="<?php print $keywords;?>">
+	<meta name="description" content="<?php print $description;?>">
+	<link rel="stylesheet" href="faq.css" type="text/css" />
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="page_ie.css" /><![endif] -->
+	<link href="page.css" rel="stylesheet" type="text/css">
+	<link href="jquery.selectBox.s1.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="js/jquery.selectBox.min.js"></script>
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+		
+<!-- <?php 	foreach ($styles as $style): 
+		 	print $style; 
+	 		endforeach; ?>
+	
+	<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<?php 	foreach ($scripts as $script):  
+	  		print $script;  
+	 		endforeach; ?> -->
+
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div id="white-top"><!-- пустышка для фона --></div>
+		<div id="white"> <!-- еще одна -->
+		</div>
+		<div id='logo'><?php print $text_logo;?>
+		</div>
+		<div id='pointer'><?php print $text_slogan;?>
+		</div>
+		<div id='login'>
+<?php if (loggedin($UserID)){ ?>
+		<a href='profile.php' id='name'><?php print loggedin($UserID);?></a> - <a href='delcookie.php?id=<?php print $UserID; ?> id='logout'><?php print $text_login[1];?></a>;
+<?php	}else{ ?>
+		<a href='' id='login1'><?php print $text_login[0];?></a> / <a href='signup.php' id='signup'><?php print $text_login[2];?></a>
+<?php	}; ?>
+		</div>
+
+		<!-- флажочки: -->
+        <?php 
+		$url=$_SERVER['REQUEST_URI'];
+		$pos=strrpos($url,'/');
+		$rest=substr($url,$pos);
+		$enurl= "http://".$_SERVER['SERVER_NAME'].'/en'.$rest;
+		$uaurl= "http://".$_SERVER['SERVER_NAME'].'/ua'.$rest;
+		$ruurl= "http://".$_SERVER['SERVER_NAME'].'/ru'.$rest;
+		?>
+		<a href='<?php print $uaurl;?>'><div id='uk'></div></a>
+		<a href='<?php print $ruurl;?>'><div id='ru'></div></a>
+		<a href='<?php print $enurl;?>'><div id ='en'></div></a>
+		
+		<!-- фоны: -->
+		<div id='gray_top'></div>
+		<div id='topfood'></div>
+		
+		<!-- соц. сети: -->
+		<a href='http://www.facebook.com/UfoodOnlineFoodOrdering' id='facebook'></a>
+		<a href='http://vkontakte.ru/club25362761' id='BKontakt'></a>
+		<a href='https://twitter.com/#!/UFOODua' id='tweeter'></a>
+		<div id='menu'>
+			<a href='' class='menuitem' id='home'><?php print $text_menu[0];?></a>
+			<a href='' class='menuitem' id='so'><?php print $text_menu[1];?></a>
+			<a href='' class='menuitem' id='er'><?php print $text_menu[2];?></a>
+			<a href='' class='menuitem' id='rr'><?php print $text_menu[3];?></a>
+			<a href='' class='menuitem' id='help'><?php print $text_menu[4];?></a>
+			<a href='' class='menuitem' id='cont'><?php print $text_menu[5];?></a>
+		
+		</div>
+		
+	</div>
+	<div id="content">
+		<div id='gray'></div> <!-- серый градиент пришлось разделить на два куска, чтобы он ложился под наполнение  content1 -->
+		<div id='content1'>  <!-- все пихать сюда, content только для работы фона -->
+			<div id="help-online">
+				<a id="a-help" href="">
+					<div id="help-online1">Live Support
+					</div>
+					<div id="help-online2">Online
+					</div>
+					<div id="help-online3">Click for<br />help
+					</div>
+				</a>
+			</div>
+			<div id="faq">
+				<div id="faq-head">Frequently Asked Questions</div>
+				<div id="faq-main">
+					<div class="q-block">	
+						<div class="q-block-type">About UFood</div>
+						<div class="q-block-list">
+							<div class="question"><a href="#about-0">так будет выглядеть очень длинный вопрос так будет выглядеть очень длинный вопрос так будет выглядеть очень длинный вопрос</a></div>
+							<div class="question"><a href="#about-1">What is UFood and how does it work?</a></div>
+						</div>
+					</div>
+					<div class="q-block">	
+						<div class="q-block-type">Membership</div>
+						<div class="q-block-list">
+							<div class="question"><a href="#membership-1">Do I have to become a member to make an order?</a></div>
+							<div class="question"><a href="#membership-2">How do I become a member at UFood?</a></div>
+						</div>
+					</div>
+					<div class="q-block">	
+						<div class="q-block-type">Ordering</div>
+						<div class="q-block-list">
+							<div class="question"><a href="#ordering-1">How do I place an order?</a></div>
+							<div class="question"><a href="#ordering-2">What if I want to order delivery for specific time, for example in several hours or even tomorrow?</a></div>
+							<div class="question"><a href="#ordering-3">Can I place and order by phone? I don’t believe that online ordering works.</a></div>
+							<div class="question"><a href="#ordering-4">How can I be sure that the order has been received and will be delivered?</a></div>
+						</div>
+					</div>
+					<div class="q-block">	
+						<div class="q-block-type">Promotions</div>
+						<div class="q-block-list">
+							<div class="question"><a href="#promo-1">What is Promotions and Super Offers on the Home page and how do I use it?</a></div>
+							<div class="question"><a href="#promo-2">What is Special Offers page and how does it work?</a></div>
+							<div class="question"><a href="#promo-3">I have a voucher, how do I use it?</a></div>
+						</div>
+					</div>
+<!-- --------------------------------- -->
+					<div class="a-block">	
+						<div class="a-block-head">About UFood</div>
+						<div class="a-block-main">
+							<div class="a-question"><a name="about-1"></a>What is UFood and how does it work?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+						</div>
+						<div class="a-block-footer"></div>
+					</div><!-- a-block -->
+					<div class="a-block">	
+						<div class="a-block-head">Membership</div>
+						<div class="a-block-main">
+							<div class="a-question"><a name="membership-1"></a>Do I have to become a member to make an order?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood</div>
+							<div class="a-question"><a name="membership-2"></a>How do I become a member at UFood?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood</div>
+						</div>
+						<div class="a-block-footer"></div>
+					</div><!-- a-block -->
+					<div class="a-block">	
+						<div class="a-block-head">Ordering</div>
+						<div class="a-block-main">
+							<div class="a-question"><a name="ordering-1"></a>How do I place an order?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+							<div class="a-question"><a name="ordering-2"></a>What if I want to order delivery for specific time, for example in several hours or even tomorrow?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+							<div class="a-question"><a name="ordering-3"></a>Can I place and order by phone? I don’t believe that online ordering works.</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+							<div class="a-question"><a name="ordering-4"></a>How can I be sure that the order has been received and will be delivered?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+						</div>
+						<div class="a-block-footer"></div>
+					</div><!-- a-block -->
+					<div class="a-block">	
+						<div class="a-block-head">Promotions</div>
+						<div class="a-block-main">
+							<div class="a-question"><a name="promo-1"></a>What is Promotions and Super Offers on the Home page and how do I use it?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+							<div class="a-question"><a name="promo-2"></a>What is Special Offers page and how does it work?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+							<div class="a-question"><a name="promo-3"></a>I have a voucher, how do I use it?</div>
+							<div class="answer">UFood is a web based system which provides customers with fast, easy and secure way of food ordering from the restaurants and take aways at their location. No more wasting money and time waiting over the phone to place the order. The service is completely free of charge and prices are equal to prices of the restaurants. Plus you can benefit from our various promotions and special offers provided by the restaurants exclusively at UFood.</div>
+						</div>
+						<div class="a-block-footer"></div>
+					</div><!-- a-block -->
+				</div>
+				<div id="faq-footer"></div>
+			</div>
+		</div><!-- content1 -->
+	</div> <!-- content -->
+	<div id="clear">
+	</div>
+	<div id="foot">
+	</div>
+</div>
+<div id="footer">
+		<img id='foodniz' src="img/food-niz.png"></img>
+		<div id='menuniz'>
+			<a href='' class='footermenu' id='f_home'><?php print $text_menu[0];?></a> <!-- здесь айди на всякий случай, в цсс они не прописаны -->
+			<a href='' class='footermenu' id='f_so'><?php print $text_menu[1];?></a>
+			<a href='' class='footermenu' id='f_yoy'><?php print $text_menu[2];?></a>
+			<a href='' class='footermenu' id='f_rr'><?php print $text_menu[3];?></a>
+			<a href='' class='footermenu' id='f_help'><?php print $text_menu[4];?></a>
+			<a href='' class='footermenu' id='f_cont'><?php print $text_menu[5];?></a>
+			<p id='copy'><?php print $text_copyright;?></p>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23454047-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,139 @@
+#help-online{
+position: absolute;
+width: 171px;
+height: 113px;
+left: 834px;
+top: 33px;
+background:url(img/help.png) no-repeat;
+color:#333333;
+text-align:center;
+font:12px Verdana, sans-serif;
+margin:0;
+}
+	#a-help{
+	color:#333333;
+	}
+	#help-online1{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 14px;
+	}
+	#help-online2{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 80px;
+	top: 37px;
+	color:#03a103;
+	font-weight:bold;
+	}
+	#help-online3{
+	position: absolute;
+	width: 90px;
+	height: 15px;
+	left: 82px;
+	top: 65px;
+	line-height:1.5;
+	}
+	
+#faq{
+position:relative;
+left:7px;
+}
+	#faq-head{
+	background: url(img/st5-menu-bg.png) 1px 20px no-repeat;
+	position:relative;
+	height:29px;
+	width:796px;
+	font: 18px Verdana, sans-serif;
+	color: #ffffff;
+	padding:29px 0 0 15px;
+	float:left;
+	}
+	#faq-main{
+	background: url(img/st5-menu-main.png) repeat-y;
+	position:relative;
+	width:796px;
+	float:left;
+	left:1px;
+	}
+		.q-block{
+		background: url(img/st3-gray-line.png) left top repeat-x;
+		margin-bottom:10px;
+		position:relative;
+		left:14px;
+		width:768px;
+		}
+		.q-block:first-child{
+		background:none;
+		}
+			.q-block-type{
+			width:766px;
+			height:27px;
+			position:relative;
+			left:0px;
+			color:#5c9e23;
+			font:14px Verdana, sans-serif;
+			padding-top:14px;
+			}
+			.q-block-list{
+			width:766px;
+			height:auto;
+			position:relative;
+			left:0px;
+			color:#3e3e3e;
+			font:12px Verdana, sans-serif;
+			}
+				.question{
+				padding-bottom:5px;
+				}
+				.question a{
+				color:#3e3e3e;
+				}
+		.a-block{
+		position:relative;
+		left:17px;
+		margin:17px 0 6px 0;
+		}
+			.a-block-head{
+			background: url(img/a-block-head.png) no-repeat;
+			position:relative;
+			width:762px;
+			height:31px;
+			color:#5c9e23;
+			font:bold 14px Verdana, sans-serif;
+			padding:13px 0 0 17px;
+			}
+			.a-block-main{
+			position:relative;
+			width:726px;
+			height:auto;
+			color:#3e3e3e;
+			font:12px Verdana, sans-serif;
+			background:#f9f9f9;
+			border-left:1px solid #e3e3e3;
+			border-right:1px solid #e3e3e3;
+			padding:10px 17px 0 17px;
+			}	
+				.a-question{
+				line-height:2;
+				font-weight:bold;
+				}
+				.answer{
+				}
+			.a-block-footer{
+			background: url(img/a-block-footer.png) no-repeat;
+			position:relative;
+			width:762px;
+			height:11px;
+			}
+	#faq-footer{
+	background: url(img/st5-menu-bottom.png) no-repeat;
+	height:11px;
+	position:relative;
+	float:left;
+	width:796px;
+	left:1px;
+	}

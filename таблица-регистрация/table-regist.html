@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title><?php print $title; ?></title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<meta name="Copyright" content="Globelix Investment Ltd">
+	<meta name="keywords" content="<?php print $keywords;?>">
+	<meta name="description" content="<?php print $description;?>">
+	
+	<link rel="stylesheet" href="cusel.css" type="text/css" />
+	<link rel="stylesheet" href="step4.css" type="text/css" />
+	<link href="page.css" rel="stylesheet" type="text/css">
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+	
+	<script type="text/javascript" src="js/jquery-1.6.1.js"></script> <!-- checkbox -->
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+	<!-- <script type="text/javascript" src="js/jquery-1.6.1.js"></script> -->
+	<!-- <script type="text/javascript" src="js/cusel.js"></script> -->
+	<script type="text/javascript" src="js/cusel-min-2.4.1.js"></script>
+	<script type="text/javascript" src="js/jScrollPane.js"></script>
+	
+	<?php 	foreach ($styles as $style): 
+		 	print $style; 
+	 		endforeach; ?>
+	
+	<!-- <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script> -->
+	<?php 	foreach ($scripts as $script):  
+	  		print $script;  
+	 		endforeach; ?>
+<style type="text/css">
+a{
+text-decoration: none;
+}
+table{ 
+border-collapse: collapse;
+color: #3E3E3E;
+font: 12px Verdana,sans-serif;
+}
+.st5-texts-link{
+color: #BF6404;
+}
+.brown{
+color:#BF6404
+}
+#main{
+border-left:1px solid #e3e3e3;
+border-right:1px solid #e3e3e3;
+}
+#thanks{
+font-size:17px;
+}	
+.detail{
+border:1px solid #e3e3e3;
+}
+#confirm{
+color: #3c6d03;
+font-size:18px;
+}
+#sentence{
+color: #3c6d03;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<table id="top" border="0" width="756" cellpadding="0">
+	<tr>
+		<td width="16"></td>
+		<td width="513" id="confirm" align="left" valign="bottom" rowspan="2">Подтверждение регистрации</td>
+		<td width="243" align="right"><img src="img/logo.png" /></td>
+		<td width="16"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td id="sentence" align="center" valign="top">Сеть заказа и доставки еды</td>
+		<td></td>
+	</tr>
+	<tr height="7"><td colspan=4></td></tr>
+	<tr>
+		<td colspan=4><img src="img/st5-gray-top.png" /></td>
+	</tr>
+</table>
+<table id="main" width="760" border="0" cellspacing="0" valign="middle" bgcolor="f2f2f2"  cellpadding="0">
+	<tr height="3"><td colspan=3></td></tr>
+	<tr>
+		<td width="16"></td>
+		<td align="left">Уважаемая(ый) <span id="user-name">Наталия Кучмистая</span>,</td>
+		<td width="16"></td>
+	</tr>
+	<tr height="15"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td align="left">Добро пожаловать на UFood!</td>
+		<td></td>
+	</tr>
+	<tr height="6"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td height="25" align="left" valign="middle"><img src="img/st5-gray-line-2.png" /></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td class="big-text" align="left">Ваши детали:</td>
+		<td></td>
+	</tr>
+	<tr height="5"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td>
+			<table class="detail" width="295" cellspacing="0"  valign="middle" bgcolor="#ffffcc" cellpadding="5" height="26">
+				<tr>
+					<td width="67" align="right">Логин:</td>
+					<td class="brown">nk@ufood.com.ua</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+	<tr height="7"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td>
+			<table class="detail" width="295" cellspacing="0" valign="middle" bgcolor="#ffffcc" cellpadding="5" height="26">
+				<tr>
+					<td width="67" align="right">Пароль:</td>
+					<td class="brown">wiefhkjdnf</td>
+				</tr>
+			</table>
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td height="30" align="left" valign="middle"><img src="img/st5-gray-line-2.png" /></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>Please <a href="" class="st5-texts-link">click here</a> to activate your profile.</td>
+		<td></td>
+	</tr>
+	<tr height="25"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td>С дополнительной информацией и часто задаваемыми вопросами<br />Вы можете ознакомиться на странице <a href="" class="st5-texts-link">Помощь</a>.</td> <!-- "помощь" не влезло((( -->
+		<td></td>
+	</tr>
+	<tr height="15"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td>Ваш подарочный ваучер будет отправлен по e-mail в течение 24 часов.</td>
+		<td></td>
+	</tr>
+	<tr height="35"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td>Всегда к Вашим услугам,</td>
+		<td></td>
+	</tr>
+	<tr height="15"><td colspan=3></td></tr>
+	<tr>
+		<td></td>
+		<td>UFood</td>
+		<td></td>
+	</tr>
+</table>
+<table id="bottom" border="0" width="761" cellpadding="0">
+	<tr>
+		<td><img src="img/st5-bottom.png" /></td>
+	</tr>
+</table>
+</body>
+</html>

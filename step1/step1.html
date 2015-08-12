@@ -1,0 +1,366 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>step 1</title>
+	<link rel="stylesheet" href="top-bottom.css" type="text/css" />
+	<link rel="stylesheet" href="step1.css" type="text/css" />
+	<!--[if IE]><link rel="stylesheet" type="text/css" href="ie.css" /><![endif] -->
+	<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="js/jcarousellite_1.0.1.pack.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		jQuery(function() {
+		jQuery("#gallery1").jCarouselLite({
+		btnNext: ".next",
+		btnPrev: ".prev",
+		visible: 4,
+		auto: ""
+		});
+		});
+		jQuery(function() {
+		jQuery("#gallery2").jCarouselLite({
+		btnNext: ".next2",
+		btnPrev: ".prev2",
+		visible: 4,
+		auto: ""
+		});
+		});
+	
+		jQuery(document).ready(function(){
+		if ((jQuery.browser.msie == true)&(jQuery.browser.version <=8))
+		{
+		var deg2radians = Math.PI * 2 / 360,
+		deg = 15;
+		rad = deg * deg2radians,
+		costheta = Math.cos(rad),
+		sintheta = Math.sin(rad);
+		jQuery('#step2').css({
+		filter: 'progid:DXImageTransform.Microsoft.Matrix(M11='+costheta+', M12='+(-1)*sintheta+', M21='+sintheta+', M22='+costheta+', SizingMethod="auto expand", enabled=true)'
+		});
+		};
+		});
+			jQuery(document).ready(function(){
+		if ((jQuery.browser.msie == true)&(jQuery.browser.version <=8))
+		{
+		var deg2radians = Math.PI * 2 / 360,
+		deg = -10;
+		rad = deg * deg2radians,
+		costheta = Math.cos(rad),
+		sintheta = Math.sin(rad);
+		jQuery('#step3').css({
+		filter: 'progid:DXImageTransform.Microsoft.Matrix(M11='+costheta+', M12='+(-1)*sintheta+', M21='+sintheta+', M22='+costheta+', SizingMethod="auto expand", enabled=true)'
+		});
+		};
+		});
+			jQuery(document).ready(function(){
+		if ((jQuery.browser.msie == true)&(jQuery.browser.version <=8))
+		{
+		var deg2radians = Math.PI * 2 / 360,
+		deg = 5;
+		rad = deg * deg2radians,
+		costheta = Math.cos(rad),
+		sintheta = Math.sin(rad);
+		jQuery('#step4').css({
+		filter: 'progid:DXImageTransform.Microsoft.Matrix(M11='+costheta+', M12='+(-1)*sintheta+', M21='+sintheta+', M22='+costheta+', SizingMethod="auto expand", enabled=true)'
+		});
+		};
+		});
+	</script> 
+</head>
+<body>
+<div id="container">
+	<div id="header">
+		<div id="white-top"></div>
+		<div id="white">
+		</div>
+		<div id='logo'>Biggest Network for food delivery
+		</div>
+		<div id='pointer'>Food delivery <br>just a few clicks away
+		</div>
+		<div id='login'>
+			<a href='' id='login1'>Login</a> / <a href='' id='signup'>Sign up</a>
+		</div>
+		<div id='username'>
+			<a href='' id='name'>Nataliia Kuchmysta</a> - <a href='' id='logout'>Logout</a>
+		</div>
+		<div id='uk'></div>
+		<div id='ru'></div>
+		<div id ='en'></div>
+		<div id='gray_top'></div>
+		<div id='topfood'></div>
+		<a href='' id='facebook'></a>
+		<a href='' id='BKontakt'></a>
+		<a href='' id='tweeter'></a>
+		<div id='menu'>
+			<a href='' class='menuitem' id='home'>Home</a>
+			<a href='' class='menuitem' id='so'>Spesial Offers</a>
+			<a href='' class='menuitem' id='er'>Evaluate restaurant</a>
+			<a href='' class='menuitem' id='rr'>Recommend restaurant</a>
+			<a href='' class='menuitem' id='help'>Help</a>
+			<a href='' class='menuitem' id='cont'>Contacts</a>
+		</div>
+	</div>
+	<div id="content">
+		<div id='gray'>
+		</div> 
+		<div id='content1'> 
+			<div id="line1-1">
+				<div id="plan">
+					<div id="step1-1">How to order?
+					</div>
+					<div id="step1-2">Check this out
+					</div>
+					<div id="step2">Choose<br />your region
+					</div>
+					<div id="step3">Choose<br />restaurant
+					</div>
+					<div id="step4">Make<br />your order
+					</div>
+					<div id="step5">Food is<br />on the way!
+					</div>
+				</div>
+				<div id="help-online">
+				<a id="a-help" href="">
+					<div id="help-online1">Live Support
+					</div>
+					<div id="help-online2">Online
+					</div>
+					<div id="help-online3">Click for<br />help
+					</div>
+				</a>
+				</div>
+			</div>
+			<div id="line1-2">
+				<div id="visitors">
+					<div id="vis-1">Visitors
+					</div>
+					<div id="vis-data">01.01.2012
+					</div>
+					<div id="vis-current">1 000
+					</div>
+					<div id="vis-total-t">Visitors total
+					</div>
+					<div id="vis-total-c">100 000
+					</div>
+				</div>
+				<div id="choose-region">
+					<div id="choose1">Choose region for delivery
+					</div>
+					<div id="choose2">- More than 60 Take Aways<br />- Choose from 20 cuisines<br />- Order from 5000 dishes
+					</div>
+					<select id="lineForm" name="hero">
+						<option selected="selected" disabled>------All regions------</option>
+						<option value="1">Shevchenkivskyi</option>
+						<option value="2">Pecherskyi</option>
+						<option value="3">Holosiivskyi</option>
+						<option value="4">Solomianskyi</option>
+						<option value="5">Svyatoshinskyi</option>
+						<option value="6">Podilskyi</option>
+						<option value="7">Obolonskyi</option>
+						<option value="8">Desnianskyi</option>
+						<option value="9">Darnytskyi</option>
+						<option value="10">Dniprovskyi</option>
+					</select>
+				</div>
+			</div>
+			<div id="line1-3">
+				<div id="upper"> 
+					<div id="headline">October Promotions</div>
+					<button class="prev"></button>            
+					<div id="gallery1">
+						<ul>
+							<li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka1 src="img/ramka2.png" />
+									<img class=pic1 src="img/logo1.png" />
+								</div>
+								<p class=name>Руставели</p>
+								<p class=discount>-10% на все меню</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li>
+							<li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka1 src="img/ramka2.png" />
+									<img class=pic1 src="img/logo1.png" />
+								</div>
+								<p class=name>Руставели</p>
+								<p class=discount>-10% на все меню</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li><li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka1 src="img/ramka2.png" />
+									<img class=pic1 src="img/logo1.png" />
+								</div>
+								<p class=name>Руставели</p>
+								<p class=discount>-10% на все меню</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li><li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka1 src="img/ramka2.png" />
+									<img class=pic1 src="img/logo1.png" />
+								</div>
+								<p class=name>Руставели</p>
+								<p class=discount>-10% на все меню</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li><li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka1 src="img/ramka2.png" />
+									<img class=pic1 src="img/logo1.png" />
+								</div>
+								<p class=name>Руставели</p>
+								<p class=discount>-10% на все меню</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li>
+						</ul>
+					</div>
+					<button class="next"></button>   
+				</div>
+				<div id="lower"> 
+					<div id="headline">October Super Offers</div>
+					<button class="prev2"></button>            
+					<div id="gallery2">
+						<ul>
+							<li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka src="img/ramka1.png" />
+									<img class=pic src="img/logo2.png" />
+								</div>
+								<p class=name1>2 Империи</p>
+								<p class=discount1>Пицца Вегетарианская -25%</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li>
+							<li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka src="img/ramka1.png" />
+									<img class=pic src="img/logo2.png" />
+								</div>
+								<p class=name1>2 Империи</p>
+								<p class=discount1>Пицца Вегетарианская -25%</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li>
+							<li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka src="img/ramka1.png" />
+									<img class=pic src="img/logo2.png" />
+								</div>
+								<p class=name1>2 Империи</p>
+								<p class=discount1>Пицца Вегетарианская -25%</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li>
+							<li>
+							<a class=blocklink href="">
+							<div class=block>
+								<div class=logo>
+									<img class=ramka src="img/ramka1.png" />
+									<img class=pic src="img/logo2.png" />
+								</div>
+								<p class=name1>2 Империи</p>
+								<p class=discount1>Пицца Вегетарианская -25%</p>
+								<div class=open>Открыто</div>
+							</div>
+							</a>
+							</li>
+						</ul>
+					</div>
+					<button class="next2"></button>
+				</div>
+			</div>
+			<div id="line1-4">
+				<div id="news">
+					<p id="news1">News and Updates</p>
+					<div id="news2">
+						<p class="news3">
+						<span class="news-date">19.09.2011</span>
+						 - Специальные предложения от FUJISAN - скидка -20% на ряд роллов!
+						</p>
+						<p class="news3">
+						<span class="news-date">08.09.2011</span>
+						 - Новые специальные предложения от DINNER PIZZA!
+						</p>
+						<p class="news3">
+						<span class="news-date">02.09.2011</span>
+						 - Новый ресторан SUSHI-POINT уже открыт и готов к обслуживанию!
+						</p>
+						<p class="news3">
+						<span class="news-date">19.09.2011</span>
+						 - Специальные предложения от FUJISAN - скидка -20% на ряд роллов!
+						</p>
+					</div>
+				</div>
+				<div id="infoblock">
+				</div>
+			</div>
+			<div id="partners">Restaurants partners
+			<img id="logos" src="img/logos.png" />
+			</div>
+			<div id="line1-5">
+				<div id="descript">UFOOD - online food ordering and delivery from the best restaurants of Kiev<br />Welcome to UFOOD! Here you can order food online from the best Kiev restaurants free of charge.<br />All prices on the site are equal to prices in restaurants.<br />And you have the opportunity to benefit from our special offers.
+				</div>
+				<div id="poll"><p id="poll-top">Service level questionnaire</p>
+					<form id="poll-1"><p id="poll-2">Would you like to have the service of using your credit card online?</p>
+						<input class="radio1" type="radio" name="browser" value="ie" />Yes<br />
+						<input class="radio1" type="radio" name="browser" value="ie" />No
+						<input id="button1" value="Submit" type="submit">
+					</form>
+				</div>
+			</div>
+			<div class="clear">
+			</div> 
+		</div>
+	</div>
+	<div class="clear">
+	</div>
+	<div id="foot">
+	</div>
+</div>
+<div id="footer">
+		<img id='foodniz' src="img/food-niz.png"></img>
+		<div id='menuniz'>
+			<div class="menulink"><a href='' class='footermenu' id='f_home'>Home</a> <!-- здесь айди на всякий случай, в цсс они не прописаны --></div>
+			<div class="menulink"><a href='' class='footermenu' id='f_so'>Spesial<br />Offers</a></div>
+			<div class="menulink"><a href='' class='footermenu' id='f_yoy'>Yummy or Yak</a></div>
+			<div class="menulink"><a href='' class='footermenu' id='f_rr'>Recommend<br />restaurant</a></div>
+			<div class="menulink"><a href='' class='footermenu' id='f_help'>Help</a></div>
+			<div class="menulink"><a href='' class='footermenu' id='f_cont'>Contacts</a></div>
+			<p id='copy'>© 2011 Globelix Investment Ltd. All rights reserved</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<div id="">
+</div>
+<div id="">
+</div>
